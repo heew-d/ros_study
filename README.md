@@ -13,6 +13,18 @@ my first ros study
 - 빌드
 - 실행
 
+- topic_second 패키지 생성
+- second_pub.cpp, second_sub.cpp 노드 생성
+- 빌드
+- 실행
+
+- topic_second 패키지에 python scripts 추가
+- py_second_pub.py, py_second_sub.py 노드 생성
+- 빌드
+- 실행
+
+- 과제 1
+
 
 ## ROS 명령어
 ### roscore
@@ -28,3 +40,16 @@ my first ros study
 ```bash
     rosrun <패키지이름> <노드이름>
 ```
+
+### catkin_create_pkg
+- 현재 위치한 작업 공간에 패키지를 생성한다.
+- catkin_create_pkg 패키지이름 의존성
+```bash
+    catkin_create_pkg <패키지이름> <의존성1> <의존성2> ...
+```
+
+```bash
+    catkin_create_pkg topic_tutorial roscpp rospy std_msgs
+```
+
+
