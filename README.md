@@ -18,13 +18,13 @@ my first ros study
 ### roscore
 - ROS Master를 실행한다.
 - 노드를 켜기 전에 가장 먼저 실행
-'''bash
+```bash
     roscore
-'''
+```
 
 ### rosrun
 - 노드를 실행한다.
 - rosrun 패키지이름 노드이름
-'''bash
+```bash
     rosrun <패키지이름> <노드이름>
-'''
+```
