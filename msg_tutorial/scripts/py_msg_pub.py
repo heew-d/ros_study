@@ -20,12 +20,12 @@ def msg_talker():
         # Mymsg:
         #   time stamp
         #   int32 data
-        msg.stamp = rospy.Time.now()
-        msg.data = cnt
+        msg.stamp = rospy.Time.now() #현재 시간을 msg의 stamp에 담는다.
+        msg.data = cnt #cnt 변수의 값을 msg의 data에 담는다.
 
-        rospy.loginfo("send msg : %d", msg.stamp.secs)
-        rospy.loginfo("send msg : %d", msg.stamp.nsecs)
-        rospy.loginfo("send msg : %d", msg.data)
+        rospy.loginfo("send msg : %d", msg.stamp.secs) #stamp.secs를 출력한다.
+        rospy.loginfo("send msg : %d", msg.stamp.nsecs) #stamp.nsecs를 출력한다.
+        rospy.loginfo("send msg : %d", msg.data) #data를 출력한다.
 
         pub.publish(msg) #pub이 msg를 퍼블리시한다.
         cnt += 1

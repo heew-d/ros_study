@@ -31,7 +31,7 @@ int main(int argc, char** argv){
        msg.data = cnt; //cnt 변수의 값을 msg의 data에 담는다.
        //sec.nsec
        ROS_INFO("send msg : %d", msg.stamp.sec); //stamp.sec를 출력한다.
-       ROS_INFO("send msg : %d", msg.stamp.nsec); //stap.nsec를 출력한다. (나노sec)
+       ROS_INFO("send msg : %d", msg.stamp.nsec); //stamp.nsec를 출력한다. (나노sec)
        ROS_INFO("send msg : %d", msg.data); //data를 출력한다.
         //퍼블리셔쪽에서 메시지를 보내기 전에 출력
 
