@@ -2,28 +2,36 @@
 my first ros study
 
 ### 2022년 9월 27일 시작
-- topoic_tutorial 패키지 생성
+- [topoic_tutorial](./topic_tutorial) 패키지 생성
 - my_publisher, my_subscriber 노드 생성
 - 빌드
 - 실행
 
 ### 2022년 9월 28일
-- topic_tutorial 패키지에 python scripts 추가
+- [topic_tutorial](./topic_tutorial) 패키지에 python scripts 추가
 - py_publisher.py, py_subscriber.py 노드 생성
 - 빌드
 - 실행
 
-- topic_second 패키지 생성
+- [topic_second](./topic_second) 패키지 생성
 - second_pub.cpp, second_sub.cpp 노드 생성
 - 빌드
 - 실행
 
-- topic_second 패키지에 python scripts 추가
+- [topic_second](./topic_second) 패키지에 python scripts 추가
 - py_second_pub.py, py_second_sub.py 노드 생성
 - 빌드
 - 실행
 
-- 과제 1
+- [과제 1](./topic_test)
+
+### 2022년 9월 29일
+- [msg_tutorial](./msg_tutorial)
+    - msg_tutorial 패키지 생성
+    - msg 디렉토리에 Mymsg.msg 생성
+    - msg_publisher, msg_subscriber, py_msg_pub.py, py_msg_sub.py 노드 생성
+    - 빌드 
+    - 실행
 
 
 ## ROS 명령어
