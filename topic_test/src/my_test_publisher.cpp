@@ -17,11 +17,12 @@ int main(int argc, char** argv){
     std_msgs::Int64 msg; //Int64 타입
     msg.data = 0; //msg의 data에 0을 넣는다.
 
-    //메시지에 담는 숫자는 매번 1씩 증가시키고 100에 도달하면 다시 0부터 보낸다.
     while (ros::ok()){
-        for(msg.data=0;msg.data<=100;msg.data++){ 
-            pub.publish(msg); //pub이 msg를 퍼블리시한다.
-            loop_rate.sleep(); //위에서 정한 주기에 따라 sleep 한다.
+        pub.publish(msg); //pub이 msg를 퍼블리시한다.
+        loop_rate.sleep(); //위에서 정한 주기에 따라 sleep 한다.
+        msg.data++; //메시지에 담는 숫자는 매번 1씩 증가시키고
+        if(msg.data == 101){ //100에 도달하면 다시 0부터 보낸다.
+            msg.data=0;
         }
     }
     
