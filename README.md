@@ -56,6 +56,20 @@ my first ros study
     - 실행
 
 
+## 2022년 10월 4일
+### [param_tutorial](./param_tutorial)
+-  param_tutorial 패키지 생성
+- caculate_server, calculate_client, caculate_server.py, calculate_client.py 노드 생성
+- 빌드
+- 실행
+- [파라미터 서버 활용](#parameter-server)
+
+### [과제4 yh_dual](./yh_dual)
+### [과제5 yh_difference](./yh_difference)
+### [과제6 yh_check](./yh_check)
+
+---
+
 ## ROS 명령어
 ### roscore
 - ROS Master를 실행한다.
@@ -80,6 +94,13 @@ my first ros study
 
 ```bash
     catkin_create_pkg topic_tutorial roscpp rospy std_msgs
+```
+
+### Python3 설치 방법
+- python3 설치
+```bash
+sudo apt install python3-pip python3-all-dev python3-rospkg
+sudo apt install ros-melodic-desktop-full --fix-missing
 ```
 
 
