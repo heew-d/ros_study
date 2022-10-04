@@ -1,8 +1,6 @@
 #include "ros/ros.h"
 #include "yh_check/YhCheck.h"
 
-static yh_check::YhCheck msg2;
-
 int main(int argc, char** argv){
     
     ros::init(argc, argv, "yh_check_distance"); // 노드 이름 초기화
@@ -13,17 +11,17 @@ int main(int argc, char** argv){
     
     ros::Rate loop_rate(2); // 0.5초마다
 
-
+    yh_check::YhCheck msg;
 
     while(ros::ok()){
-        msg2.stamp = ros::Time::now();
-        msg2.data = false;
+        msg.stamp = ros::Time::now();
+        msg.data = false;
 
-        ROS_INFO("distance msg : %d", msg2.stamp.sec);
-        ROS_INFO("distance msg : %d", msg2.stamp.nsec);
-        ROS_INFO("distance msg : %d",msg2.data);
+        ROS_INFO("distance msg : %d", msg.stamp.sec);
+        ROS_INFO("distance msg : %d", msg.stamp.nsec);
+        ROS_INFO("distance msg : %d",msg.data);
 
-        pub.publish(msg2);
+        pub.publish(msg);
         loop_rate.sleep();
     }
 
