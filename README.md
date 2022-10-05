@@ -65,8 +65,17 @@ my first ros study
 - [파라미터 서버 활용](#parameter-server)
 
 ### [과제4 yh_dual](./yh_dual)
-### [과제5 yh_difference](./yh_difference)
+- yh_dual 패키지 생성
+- yh_dual_pub, yh_dual_int, yh_dual_time, yh_dual_pub.py 노드 생성
+- 빌드
+- 실행
 
+### [과제5 yh_difference](./yh_difference)
+- yh_difference 패키지 생성
+- srv 디렉토리에 YhDifference.srv 생성
+- yh_difference_client, yh_difference_server 노드 생성
+- 빌드 
+- 실행
 
 
 ## 2022년 10월 5일
