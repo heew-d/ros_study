@@ -58,7 +58,7 @@ my first ros study
 
 ## 2022년 10월 4일
 ### [param_tutorial](./param_tutorial)
--  param_tutorial 패키지 생성
+- param_tutorial 패키지 생성
 - caculate_server, calculate_client, caculate_server.py, calculate_client.py 노드 생성
 - 빌드
 - 실행
@@ -66,7 +66,24 @@ my first ros study
 
 ### [과제4 yh_dual](./yh_dual)
 ### [과제5 yh_difference](./yh_difference)
+
+
+
+## 2022년 10월 5일
 ### [과제6 yh_check](./yh_check)
+- yh_check 패키지 생성
+- yh_check_distance, yh_check_camera, yh_check_sub, yh_check_distance.py, yh_check_camera.py, yh_check_sub.py 노드 생성
+- 빌드 
+- 실행
+- Python 클래스로 작성
+
+### [과제7 yh_connect](./yh_connect)
+- yh_connect 패키지 생성
+- yh_connect_pub, yh_connect_sub, yh_connect_sub_pub, yh_connect_pub.py, yh_connect_sub.py, yh_connect_sub_pub.py 노드 생성
+- 빌드
+- 실행
+- Python 클래스로 작성
+
 
 ---
 

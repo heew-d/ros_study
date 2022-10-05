@@ -7,23 +7,23 @@ int main(int argc, char** argv){
     ros::NodeHandle nh;
 
     //퍼블리셔 선언
-    ros::Publisher pub = nh.advertise<yh_check::YhCheck>("check_distance",100);
+    ros::Publisher pub = nh.advertise<yh_check::YhCheck>("check_distance",10);
     
     ros::Rate loop_rate(2); // 0.5초마다
 
     yh_check::YhCheck msg;
+    msg.data = true;
 
     while(ros::ok()){
         msg.stamp = ros::Time::now();
-        msg.data = false;
+        pub.publish(msg);
+        msg.data = !msg.data;
+        loop_rate.sleep();
 
         ROS_INFO("distance msg : %d", msg.stamp.sec);
         ROS_INFO("distance msg : %d", msg.stamp.nsec);
-        ROS_INFO("distance msg : %d",msg.data);
-
-        pub.publish(msg);
-        loop_rate.sleep();
+        ROS_INFO("distance msg : %d", msg.data);
+        
     }
-
     return 0;
 }
