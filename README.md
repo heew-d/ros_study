@@ -164,7 +164,7 @@ rosparam set <파라미터 이름> [파라미터 값]
 ```
 
 
-### teleop_twist_keyboard 패키지 설치
+### teleop_twist_keyboard
 - 키보드 입력을 받아 /cmd_vel 토픽의 geometry_msgs/Twist 메시지로 publish 하는 노드
 - 설치
 ```bash
