@@ -104,6 +104,13 @@ my first ros study
 
 ### [roslaunch 실습](#roslaunch)
 
+
+## 2022년 10월 7일
+### [yh_tutle 연습문제](./yh_turtle)
+- yh_turtle_circle.py, yh_turtle_triangle.py, yh_turtle_square.py 노드 생성
+- 빌드
+- 실행
+
 ---
 
 ## ROS 명령어
